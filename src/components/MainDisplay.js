@@ -1,7 +1,9 @@
+import React from "react";
+
 const MainDisplay = () =>{
     return(
-        <h1>This is the main section</h1>
-    )
+        <div className="ContentBlock"></div>
+    );
 }
 
 export default MainDisplay;
