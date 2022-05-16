@@ -12,7 +12,7 @@ const SideBar = () => {
             <input type="text"/>
             <p>What's your monthly income?</p>
             <input type="text"/> <br/>
-            <button>+ Add Household Member</button>
+            <button>+ ADD HOUSEHOLD MEMBER</button>
             <hr/>
 
             <div className="householdMembers">
@@ -28,7 +28,7 @@ const SideBar = () => {
                     <p>salary indicated here</p>
                 </div>
             
-                <button>Let's Budget!</button>
+                <button>LET'S BUDGET !</button>
             </div>
         </div>
     );

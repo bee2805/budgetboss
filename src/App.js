@@ -1,12 +1,12 @@
 import SideBar from "./components/SideBar";
-import MainDisplay from "./components/MainDisplay"
+import MainDisplayLeft from "./components/MainDisplayLeft"
 
 
 function App() {
   return (
     <div className="App">
       <SideBar/>
-      <MainDisplay/>
+      <MainDisplayLeft/>
     </div>
   );
 }

@@ -1,20 +1,37 @@
+/* general styling */
 body{
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
 }
 
+hr{
+  border-top: 1px solid #f5f5f5;
+}
+
 input{
-  height: 3%;
   width: 80%;
   border: none;
   border-radius: 10px;
   background-color: #f5f5f5;
+  text-decoration: none;
+  outline: none;
+  padding: 10px;
 }
 
 button{
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #366F81;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Champagne & Limousines', sans-serif;
+}
+
+h3{
+  color: #366F81;
 }
 
 h4{
@@ -28,6 +45,8 @@ p{
   margin-top: 5px;
 }
 
+
+/* Side Bar styling */
 .SideBar{
   height: 100vh;
   width: 20%;
@@ -60,8 +79,192 @@ p{
   margin-bottom: 10px;
 }
 
+.profileOne, .profileTwo h4{
+  padding-top: 3%;
+  text-align: center;
+  font-family: 'Champagne & Limousines', sans-serif;
+}
+
+.profileOne, .profileTwo p {
+  text-align: center;
+}
+
+/* Main Component Styling */
 .ContentBlock{
   width: 80%;
   height: 100vh;
   float: left;
+}
+
+/* leftBlock */
+.leftBlock{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+/* Net Income */ 
+.netIncome{
+  width: 95%;
+  padding: 2px;
+  background-color: #366F81;
+  color: white;
+  margin-left: 3%;
+  margin-top: 3%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+}
+
+.incomeAfterTax, .extraElement{
+  width: 95%;
+  padding: 2px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-left: 3%;
+  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+}
+
+.incomeAfterTax{
+  height: 42vh;
+}
+
+.extraElement{
+  height: 38vh;
+}
+
+.incomeAfterTax h3{
+  text-align: center;
+}
+
+.profileOne{
+  width: 45%;
+  height: 75%;
+  border-right: 2px solid #f5f5f5;
+  float: left;
+}
+
+.profileTwo{
+  width: 45%;
+  height: 75%;
+  float: left;
+}
+
+.percentage{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #90C7DB;
+  margin: 0 auto;
+}
+
+.profileOne .randBox{
+  width: 10px;
+  float: none;
+  float: left;
+  margin-left: 5%;
+}
+
+.profileTwo .randBox{
+  width: 10px;
+  float: none;
+  float: left;
+  margin-left: 5%;
+}
+
+.randAmount{
+  width: 78%;
+  padding: 2.2%;
+  background-color: #f5f5f5;
+  float: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.light{
+  margin-top: 9%;
+  color: #9E9E9E;
+}
+
+/* Right side styling */
+.rightBlock{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+/* Monthly expenses Block */
+.monthlyExpenses{
+  width: 89%;
+  padding: 3%;
+  height: 60%;
+  background-color: white;
+  margin-left: 2%;
+  margin-top: 3%;
+  border-radius: 10px;
+  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+}
+
+.monthlyExpenses h3{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.expenseBlock{
+  width: 100%;
+  height: 6%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.expenseBlock p{
+  float: left;
+}
+
+.randBox{
+  float: right;
+  padding: 6px;
+  background-color: #90C7DB;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.expenseBlock input{
+  float: right;
+  width: 30%;
+  padding: 8px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.monthlyExpenses button{
+  margin-top: 5%;
+  margin-left: 5%;
+  float: left;
+}
+
+.totalExpenses h3{
+  margin-top: 7%;
+}
+
+/* Left over money and savings block */
+.finalTotalAndSavings{
+  width: 89%;
+  height: 24vh;
+  padding: 3%;
+  margin-top: 3%;
+  margin-left: 2%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
 }
