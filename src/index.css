@@ -28,6 +28,12 @@ button{
   padding: 10px;
   border-radius: 10px;
   font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #90C7DB;
 }
 
 h3{
@@ -52,10 +58,8 @@ p{
   width: 20%;
   background-color: white;
   float: left;
-  box-shadow: 23px 2px 18px -14px rgba(0,0,0,0.36);
-  -webkit-box-shadow: 23px 2px 18px -14px rgba(0,0,0,0.36);
-  -moz-box-shadow: 23px 2px 18px -14px rgba(0,0,0,0.36);
   text-align: center;
+  position: fixed;
 }
 
 .Logo{
@@ -68,24 +72,61 @@ p{
 }
 
 .memberOne, .memberTwo{
-  padding: 5px;
-  background-color: #f5f5f5;
+  padding: 2%;
   border-radius: 10px;
   width: 80%;
   margin: 0 auto;
 }
 
 .memberOne{
+  background-color: #F4AEBA;
+}
+
+.memberOne h4{
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: #ED6179;
+}
+
+.memberOne p{
+  color: white;
+}
+
+.memberTwo{
+  background-color: #F3CB7F;
+}
+
+.memberTwo h4{
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: #F4A000;
+}
+
+.memberTwo p{
+  color: white;
+}
+
+.memberOne, .memberTwo{
   margin-bottom: 10px;
 }
 
-.profileOne, .profileTwo h4{
+.profileOne h4{
   padding-top: 3%;
   text-align: center;
   font-family: 'Champagne & Limousines', sans-serif;
 }
 
-.profileOne, .profileTwo p {
+.profileTwo h4{
+  padding-top: 3%;
+  text-align: center;
+  font-family: 'Champagne & Limousines', sans-serif;
+}
+
+.profileOne p {
+  text-align: center;
+}
+
+.profileTwo p{
   text-align: center;
 }
 
@@ -94,6 +135,7 @@ p{
   width: 80%;
   height: 100vh;
   float: left;
+  margin-left: 20%;
 }
 
 /* leftBlock */
@@ -101,11 +143,14 @@ p{
   width: 50%;
   height: 100%;
   float: left;
-}
+  overflow: auto;
+} 
+
+
 
 /* Net Income */ 
 .netIncome{
-  width: 95%;
+  width: 93%;
   padding: 2px;
   background-color: #366F81;
   color: white;
@@ -113,29 +158,46 @@ p{
   margin-top: 3%;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
 }
 
-.incomeAfterTax, .extraElement{
-  width: 95%;
+.incomeAfterTax{
+  width: 93%;
   padding: 2px;
   background-color: white;
   border-radius: 10px;
   margin-top: 3%;
   margin-left: 3%;
-  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  
+}
+
+.totalAndSavings{
+  width: 96%;
+  padding: 2px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 3%;
+  height: 38vh;
+  text-align: center;
+}
+
+.totalAndSavings .randBox{
+  float: left;
+  margin-left: 29%;
+  padding: 2%;
+}
+
+.totalAndSavings .randAmount{
+  width: 30%;
+  float: left; 
+  padding: 3.6%;
+}
+
+.totalAndSavings .randBox{
+  float: left;
 }
 
 .incomeAfterTax{
   height: 42vh;
-}
-
-.extraElement{
-  height: 38vh;
 }
 
 .incomeAfterTax h3{
@@ -143,23 +205,32 @@ p{
 }
 
 .profileOne{
-  width: 45%;
+  width: 50%;
   height: 75%;
   border-right: 2px solid #f5f5f5;
   float: left;
+  padding: 0;
 }
 
 .profileTwo{
-  width: 45%;
+  width: 48%;
   height: 75%;
   float: left;
 }
 
-.percentage{
+.percentageOne{
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #90C7DB;
+  background-color: #F4AEBA;
+  margin: 0 auto;
+}
+
+.percentageTwo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #F3CB7F;
   margin: 0 auto;
 }
 
@@ -177,13 +248,19 @@ p{
   margin-left: 5%;
 }
 
+.randBox{
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+}
+
 .randAmount{
   width: 78%;
-  padding: 2.2%;
+  padding: 2%;
   background-color: #f5f5f5;
   float: left;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  font-family: 'Champagne & Limousines', sans-serif;
 }
 
 .light{
@@ -196,25 +273,27 @@ p{
   width: 50%;
   height: 100%;
   float: left;
+  background-color: transparent;
 }
 
 /* Monthly expenses Block */
 .monthlyExpenses{
-  width: 89%;
+  width: 87.5%;
   padding: 3%;
-  height: 60%;
+  height: 45%;
   background-color: white;
-  margin-left: 2%;
+  margin-left: 3%;
   margin-top: 3%;
+  margin-bottom: 3%;
   border-radius: 10px;
-  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
 }
 
 .monthlyExpenses h3{
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3%;
+  padding: 0;
+  margin-top: 0;
+
 }
 
 .expenseBlock{
@@ -231,7 +310,7 @@ p{
 
 .randBox{
   float: right;
-  padding: 6px;
+  padding: 5px;
   background-color: #90C7DB;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -240,31 +319,180 @@ p{
 .expenseBlock input{
   float: right;
   width: 30%;
-  padding: 8px;
+  padding: 6.5px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 
 .monthlyExpenses button{
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 3%;
+  margin-left: 10%;
   float: left;
 }
 
 .totalExpenses h3{
-  margin-top: 7%;
+  margin-top: 4%;
+  margin-left: 2%;
+  float: left;
 }
 
-/* Left over money and savings block */
-.finalTotalAndSavings{
-  width: 89%;
-  height: 24vh;
+.damage{
+  width: 100%;
+  height: 20%;
+}
+
+.savingsDropdown{
+  text-align: center;
+  width: 30%;
+  padding: 2%;
+  background-color: #366F81;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-bottom: 2%;
+  outline: none;
+}
+
+.savingsDropdown:hover{
+  background-color: #90C7DB;
+}
+
+.totalAndSavings{
+  height: 56vh;
+}
+
+.totalAndSavings hr{
+  width: 90%;
+}
+
+.totalAndSavings p {
+  color: #9E9E9E;
+}
+
+
+/* calculator styling */
+.calculatorWrapper{
+  width: 91%;
+  height: 31.5vh;
   padding: 3%;
   margin-top: 3%;
-  margin-left: 2%;
   border-radius: 10px;
+  background-color: #90C7DB;
+}
+
+.screen{
+  width: 90%;
+  padding: 4%;
+  height: 10px;
+  grid-column: 1 / -1;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  margin-left: 0.5%;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: #366F81;
+}
+
+.inputBtns{
+  width: 60%;
+  float: left;
+  margin-left: -0.5%;
+}
+
+.inputBtn{
+  text-align: center;
+  width: 30%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  float: left;
   background-color: white;
-  box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 9px 33px -7px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: #366F81;
+}
+
+.equalsBtn{
+  text-align: center;
+  width: 96.5%;
+  margin-left: 3%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  float: left;
+  background-color: #F3CB7F;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #F4A000
+}
+
+.inputBtn:hover{
+  background-color: #366F81;
+  color: white;
+}
+
+.equalsBtn:hover{
+  background-color: #F4A000;
+  color: white;
+}
+
+.operatorBtns{
+  width: 40%;
+  float: left;
+}
+
+.operatorBtn{
+  text-align: center;
+  width: 47%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  float: left;
+  background-color: #F3CB7F;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: #F4A000;
+}
+
+.zero{
+  width: 62%;
+}
+
+.operatorBtn:hover{
+  background-color: #F4A000;
+  color: white;
+}
+
+.topBtn{
+  text-align: center;
+  width: 30%;
+  margin-left: 3%;
+  margin-bottom: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  float: left;
+  background-color: #366F81;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Champagne & Limousines', sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.topBtn:hover{
+  background-color: #1B3B45;
+  color: white;
 }
